@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./Fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./Fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(./Fonts/Roboto/Roboto-Light.ttf);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: BlackHanSans;
+    src: url(./Fonts/BlackHanSans-Regular.ttf);
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.app {
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+  }
+
+.app--dark {
+    background-color: #202020;
+}
+
+.app--light {
+    background-color: #FAFAFA;
+}
+
+.app__themeSwitch {
+    position: absolute;
+    top: 3rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+.app__themeSwitch:hover {
+    cursor: pointer;
+}
+
+.app__hero {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}

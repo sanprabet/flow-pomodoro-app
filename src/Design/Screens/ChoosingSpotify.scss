@@ -1,0 +1,20 @@
+.music{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.music__choosing{
+    grid-area: 2 / 2 / 6 / 4;
+}
+
+.music__title{
+    grid-area: 3 / 5 / 5 / 7;
+}

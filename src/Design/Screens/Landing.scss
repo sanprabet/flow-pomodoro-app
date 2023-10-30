@@ -1,0 +1,58 @@
+/* General Layout of Landing Page */
+.landing{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.landing__signButtons{
+    grid-area: 1 / 1 / 2 / 3;
+}
+.landing__hero {
+    grid-area: 2 / 2 / 4 / 5;
+}
+
+/* Hero */
+.landing__hero{
+    font-family: BlackHanSans;
+    font-size: 17rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 3rem;
+    line-height:30rem;
+}
+
+.landing__hero__title{
+    margin: 0;
+    padding: 0;
+    width: min-content;
+}
+
+.landing__hero__title--dark{
+    color: #303030;
+}
+
+.landing__hero__title--dark{
+    color: #FAFAFA;
+}
+
+.landing__hero__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+
+.landing__hero__icon svg{
+    width: 30rem;
+    align-self: flex-start;
+    cursor: pointer;
+}

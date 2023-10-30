@@ -1,0 +1,28 @@
+/* Sign Button */
+
+.buttonSign:hover{
+    cursor: pointer;
+}
+
+.buttonSign--dark{
+    background-color: #FAFAFA;
+    color: #303030;
+}
+
+.buttonSign--light{
+    background-color: #303030;
+    color: #fafafa;
+}
+
+.buttonSign{
+    margin: 2rem;
+    width: 20rem;
+    height: 6rem;
+    flex-shrink: 0;
+
+    border-radius: 30rem;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight: 700;
+}
