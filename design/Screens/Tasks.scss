@@ -1,0 +1,62 @@
+.tasks{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.tasks__list__container{
+    grid-area: 2 / 2 / 9 / 10;
+}
+
+.tasks_add{
+    grid-area: 9 / 2 / 10 / 10;
+}
+
+.task__skip{
+    grid-area: 10 / 9 / 11 / 11;
+}
+
+// Tasks List
+
+.tasks__list{
+    min-width: 70rem;
+}
+
+.tasks__item{
+    border: 0.5rem solid #fafafa;
+    border-radius: 10px;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.tasks__item__text{
+    width: 100%;
+
+    margin-right: 2rem;
+
+    color: #FAFAFA;
+    font-family: Roboto;
+    font-size: 3rem;
+    text-align: justify;
+
+}
+
+.tasks__item__buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.tasks__item__buttons div svg{
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}

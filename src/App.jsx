@@ -1,7 +1,10 @@
 import { useState } from 'react'
+import SignIn from './Screens/SignIn'
+import SignUp from './Screens/SignUp'
 import Landing from './Screens/Landing'
-import Music from './Screens/ChoosingSpotify'
-import './Design/App.scss'
+import Music from './Screens/ChoosingMusic'
+import Tasks from './Screens/Tasks'
+import '../design/App.scss'
 
 function ThemeSwitch({theme, switchFunction}) {
   let switchColor = (theme == "dark") ? "#fafafa" : "#303030"
@@ -28,7 +31,10 @@ function App() {
         </div>
         <div className="app__hero">
           {/* <Landing theme={theme} /> */}
-          <Music theme={theme} />
+          {/* <Music theme={theme} /> */}
+          {/* <SignIn theme={theme} /> */}
+          {/* <SignUp theme={theme} /> */}
+          <Tasks theme={theme}/>
         </div>
       </div>
   )

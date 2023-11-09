@@ -1,0 +1,347 @@
+// Structure
+.signUp{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.signUp__credentials{
+    grid-area: 2 / 2 / 6 / 5;
+
+    border: #fafafa 2rem solid;
+    border-radius: 10px;
+    padding: 2rem;
+
+    max-width: 70rem;
+    max-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.signUp__credentials--dark{
+    border: #fafafa 1rem solid;
+}
+
+.signUp__credentials--light{
+    border: #303030 1rem solid;
+}
+
+.signUp__title{
+    grid-area: 2 / 6 / 6 / 9;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    font-family: Roboto;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.signUp__title--dark{
+    color: #FAFAFA;
+}
+
+.signUp__title--dark{
+    color: #FAFAFA;
+}
+
+// signUp Credentials
+//Sign In Credentials Email
+.signUp__credentials__email{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+// signUp Credentials Title
+.signUp__credentials__title{
+    grid-area: 1 / 1 / 3 / 2;
+
+    font-size: 3.5rem;
+    font-family: BlackHanSans;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signUp__credentials__title--dark{
+    color: #FAFAFA;
+}
+
+// signUp Credentials Form
+
+.signUp__credentials__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signUp__credentials__form--dark{
+    color: #FAFAFA;
+}
+
+.signUp__credentials__form--light{
+    color: #303030;
+}
+
+.signUp__credentials__form__textInput{
+    height: 7rem;
+    margin: 1rem 0;
+    padding: 0 10px;
+
+    font-family: Roboto;
+    font-size: 2.5rem;
+}
+
+.signUp__credentials__form__textInput--dark{
+    border-radius: 10px;
+}
+
+.signUp__credentials__form__textInput--light{
+    border: #303030 5px solid;
+    border-radius: 10px;
+}
+
+.signUp__credentials__form__submit{
+    width: 20rem;
+    height: 7rem;
+    margin: 1rem 0;
+    align-self: center;
+    
+    border: #1DB954 0.8rem solid;
+    border-radius: 10px;
+
+    color: #1DB954;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.signUp__credentials__form__submit--dark{
+    background-color: #202020;
+}
+
+.signUp__credentials__form__submit--light{
+    background-color: #FAFAFA;
+}
+
+.signUp__credentials__form__submit:hover{
+    cursor: pointer;
+    color: #FAFAFA;
+    background-color: #1DB954;
+}
+
+// signUp Credentials Apps
+
+.signUp__credentials__apps{
+}
+
+.signUp__credentials__apps__logos{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signUp__credentials__apps__logos svg:hover{
+    cursor: pointer;
+}
+
+.signUp__credentials__apps__title{
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 1rem;
+
+    text-align: center;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.signUp__credentials__apps__title--dark{
+    color: #FAFAFA;
+
+}
+
+.signUp__credentials__forgotPassword{
+    cursor: pointer;
+    width: 100%;
+    margin-top: 3rem;
+
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.signUp__credentials__forgotPassword--dark{
+    color: #FAFAFA;
+}
+
+.signUp__credentials__forgotPassword--light{
+    color: #303030;
+}
+
+// signUp Title
+
+.signUp__title__mix{
+    font-family: BlackHanSans;
+    font-size: 7rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signUp__title__label{
+    font-family: Roboto;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.signUp__title__hook{
+    color: #1DB954;
+}
+
+.signUp__title__exit{
+    justify-self: flex-end;
+
+    margin-top: 2rem;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.signUp__title__exit__button{
+    background-color: transparent;
+    font-family: Roboto;
+    font-weight: bold;
+
+    margin: 1rem 0 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+
+
+}
+
+.signUp__title__exit__button:hover{
+    cursor: pointer;
+    border: #1DB954 0.5rem solid;
+    color: #1DB954;
+}
+
+.signUp__title__exit__button--dark{
+    border: #fafafa 0.5rem solid;
+    color: #fafafa;
+}
+
+.signUp__title__exit__button--light{
+    border: #303030 0.5rem solid;
+    color: #303030;
+}
+
+@media screen and (max-width: 1320px) {
+    .signUp{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .signUp__credentials{
+        grid-area: 2 / 1 / 8 / 6;
+    }
+    .signUp__credentials__title{
+        font-size: 3rem;
+    }
+    .signUp__title{
+        grid-area: 1 / 6 / 9 / 10;
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .signUp{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .signUp__credentials{
+        grid-area: 2 / 1 / 7 / 10;
+        margin: 1rem
+    }
+    .signUp__credentials__form__textInput{
+        height: 5rem;
+    }
+    .signUp__credentials__form__submit{
+        height:5rem;
+        width: 15rem;
+        font-size: 2.5rem;
+    }
+    .signUp__credentials__title{
+        font-size: 2.5rem;
+    }
+    .signUp__credentials__apps__title{
+        font-size: 2rem;
+    
+    }
+
+    .signUp__title{
+        grid-area: 7 / 1 / 8 / 10;
+    }
+    .signUp__title__text{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .signUp{
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .signUp__credentials{
+        grid-area: 2 / 1 / 7 / 10;
+        margin: 1rem
+    }
+    .signUp__credentials__form__textInput{
+        height: 5rem;
+        margin: 0;
+    }
+    .signUp__credentials__form__submit{
+        height:5rem;
+        width: 15rem;
+        font-size: 2.5rem;
+    }
+    .signUp__credentials__title{
+        font-size: 2.5rem;
+    }
+    .signUp__credentials__apps__title{
+        font-size: 2rem;
+    
+    }
+
+
+    .signUp__title{
+        grid-area: 7 / 1 / 8 / 10;
+    }
+    .signUp__title__text{
+        display: none;
+    }
+    .signUp__title__exit__button{
+        font-size: 1.5rem;
+        margin: 0.2rem;
+    }
+}

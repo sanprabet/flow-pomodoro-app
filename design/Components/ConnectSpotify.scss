@@ -1,0 +1,62 @@
+.connectSpotify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 1rem 2rem;
+    border: #FAFAFA 1rem solid;
+    color: #FAFAFA;
+    border-radius: 10px;
+
+    width: 100%;
+}
+
+.connectSpotify--dark{
+    border: #FAFAFA 1rem solid;
+    color: #FAFAFA;
+}
+
+.connectSpotify--light{
+    border: #303030 1rem solid;
+    color: #303030;
+}
+
+.connectSpotify:hover{
+    cursor: pointer;
+    border: #1DB954 1rem solid;
+    color: #1DB954;
+}
+
+.connectSpotify__logo{
+    margin-right: 2rem;
+}
+
+.connectSpotify__label{
+    font-family: BlackHanSans;
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 1320px) {
+    .connectSpotify__label{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px) {
+    .connectSpotify__label{
+        font-size: 4rem;
+    }
+    .connectSpotify{
+        width: 90%;
+        align-self: center;
+
+        padding: 1rem;
+    }
+    .connectSpotify__logo{
+        margin: 0;
+    }
+}

@@ -1,0 +1,119 @@
+/* General Layout of Landing Page */
+.landing{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.landing__signButtons{
+    grid-area: 1 / 1 / 2 / 3;
+
+    display: flex;
+}
+
+/* Hero */
+.landing__hero{
+    grid-area: 2 / 2 / 7 / 6;
+    margin-left: 3rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: BlackHanSans;
+    font-size: 13rem;
+    line-height:23rem;
+}
+
+.landing__hero__title{
+    margin: 0;
+    padding: 0;
+    width: min-content;
+}
+
+.landing__hero__title--dark{
+    color: #303030;
+}
+
+.landing__hero__title--dark{
+    color: #FAFAFA;
+}
+
+.landing__hero__icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 3rem;
+}
+
+.landing__hero__icon svg{
+    width: 30rem;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1320px) {
+    .landing__hero{
+        font-size: 7.5rem;
+        line-height: 15rem;
+    }
+    .landing__hero__icon svg{
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .landing__hero{
+        grid-area: 2 / 1 / 7 / 7;
+
+        display: flex;
+        flex-direction: column;
+
+        font-size: 7rem;
+        line-height:12rem;
+        margin-left: 0;
+    }
+
+    .landing__hero__icon{
+        margin-top: 2rem;
+    }
+
+    .landing__hero__icon svg{
+        width: 12rem;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .landing__hero{
+        grid-area: 2 / 1 / 7 / 7;
+
+        display: flex;
+        flex-direction: column;
+
+        font-size: 4.8rem;
+        line-height:12rem;
+        margin-top: 0;
+    }
+
+    .landing__hero__icon{
+        margin-top: 2rem;
+    }
+
+    .landing__hero__icon svg{
+        width: 10rem;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+}

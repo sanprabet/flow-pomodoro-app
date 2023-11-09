@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import ButtonSign from '../Components/ButtonSign'
-import '../Design/Screens/Landing.scss'
+import '../../design/Screens/Landing.scss'
   
 function Landing({theme}){
     const openSignIn = () => (console.log("openSignIn"))
