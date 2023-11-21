@@ -47,8 +47,11 @@ body {
     bottom:0px;
     left:0px;
 
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 
 .app--dark {
@@ -60,19 +63,21 @@ body {
 }
 
 .app__hero {
+    grid-area: 1 / 1 / 11 / 11;
+
     height: 100%;
     width: 100%;
-    max-width: 160rem;
 }
 
 .app__themeSwitch {
-    position: absolute;
-    top: 3rem;
-    right: 2rem;
-    z-index: 100;
+    grid-area: 1 / 10 / 2 / 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.app__themeSwitch:hover {
+.app__themeSwitch:hover{
     cursor: pointer;
 }
 

@@ -12,22 +12,22 @@
 
 .signIn__credentials{
     grid-area: 2 / 2 / 6 / 5;
-    border: #fafafa 2rem solid;
+    border: #fafafa 20px solid;
     border-radius: 10px;
-    padding: 4rem;
+    padding: 0 20px;
 
     max-width: 70rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .signIn__credentials--dark{
-    border: #fafafa 1rem solid;
+    border: #fafafa 10px solid;
 }
 
 .signIn__credentials--light{
-    border: #303030 1rem solid;
+    border: #303030 10px solid;
 }
 
 .signIn__title{
@@ -90,7 +90,7 @@
 
 .signIn__credentials__form__textInput{
     height: 7rem;
-    margin: 1rem 0;
+    margin: 10px 0;
     padding: 0 10px;
     font-family: Roboto;
     font-size: 2.5rem;
@@ -109,14 +109,14 @@
 .signIn__credentials__form__submit{
     width: 20rem;
     height: 7rem;
-    margin: 1rem 0;
+    margin: 10px 0;
     align-self: center;
 
     font-family: Roboto;
     font-weight: bold;
     font-size: 3rem;
 
-    border: #1DB954 0.8rem solid;
+    border: #1DB954 8px solid;
     border-radius: 10px;
     color: #1DB954;
 }
@@ -153,8 +153,8 @@
 
 .signIn__credentials__apps__title{
     width: 100%;
-    margin: 2rem 0;
-    padding: 0 1rem;
+    margin: 20px 0;
+    padding: 0 20px;
 
     font-family: Roboto;
     font-weight: bold;
@@ -223,24 +223,24 @@
     font-weight: bold;
     font-size: 2rem;
 
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
+    margin: 5px;
+    padding: 5px 10px;
     border-radius: 10px;
 }
 
 .signIn__title__exit__button:hover{
     cursor: pointer;
-    border: #1DB954 0.5rem solid;
+    border: #1DB954 5px solid;
     color: #1DB954;
 }
 
 .signIn__title__exit__button--dark{
-    border: #fafafa 0.5rem solid;
+    border: #fafafa 5px solid;
     color: #fafafa;
 }
 
 .signIn__title__exit__button--light{
-    border: #303030 0.5rem solid;
+    border: #303030 5px solid;
     color: #303030;
 }
 
@@ -275,7 +275,7 @@
     }
     .signIn__credentials{
         grid-area: 2 / 1 / 7 / 10;
-        margin: 1rem
+        margin: 10px
     }
     .signIn__credentials__form__textInput{
         height: 5rem;
@@ -311,11 +311,11 @@
     }
     .signIn__credentials{
         grid-area: 2 / 1 / 7 / 10;
-        margin: 1rem
+        margin: 10px
     }
     .signIn__credentials__form__textInput{
         height: 5rem;
-        margin: 0.1rem;
+        margin: 1px;
     }
     .signIn__credentials__form__submit{
         height:5rem;
@@ -338,6 +338,6 @@
     }
     .signIn__title__exit__button{
         font-size: 1.5rem;
-        margin: 0.2rem;
+        margin: 2px;
     }
 }

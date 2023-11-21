@@ -1,0 +1,18 @@
+.task{
+    margin: 20px;
+    padding: 20px;
+    
+    border: 10px solid #fafafa;
+    border-radius: 10px;
+}
+
+.task__title{
+    font-family: Roboto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.task__title--dark{
+    color: #fafafa;
+}

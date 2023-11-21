@@ -7,6 +7,7 @@ import Tasks from './Screens/Tasks'
 import '../design/App.scss'
 
 function ThemeSwitch({theme, switchFunction}) {
+  console.log(theme)
   let switchColor = (theme == "dark") ? "#fafafa" : "#303030"
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 70 70" fill="none" onClick={() => switchFunction()}>

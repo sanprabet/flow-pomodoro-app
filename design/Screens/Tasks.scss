@@ -1,3 +1,4 @@
+// Structure
 .tasks{
     height: 100%;
     width: 100%;
@@ -9,54 +10,82 @@
     grid-row-gap: 0px;
 }
 
-.tasks__list__container{
-    grid-area: 2 / 2 / 9 / 10;
+.tasks_goBack{
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.tasks_add{
-    grid-area: 9 / 2 / 10 / 10;
+.tasks_timer{
+    grid-area: 1 / 2 / 2 / 10;
 }
 
-.task__skip{
-    grid-area: 10 / 9 / 11 / 11;
+.tasks_main{
+    grid-area: 2 / 1 / 11 / 11;
 }
 
-// Tasks List
+// Button GoBack
 
-.tasks__list{
-    min-width: 70rem;
+.tasks_goBack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tasks__item{
-    border: 0.5rem solid #fafafa;
+.tasks_goBack__button{
+    height: 4rem;
+    width: 15rem;
+
+    border: None;
     border-radius: 10px;
 
-    padding: 1rem;
-
-    display: flex;
-    flex-direction: row;
-
+    font: bold 2rem Roboto;
 }
 
-.tasks__item__text{
-    width: 100%;
+.tasks_goBack__button--dark{
+    color: #202020;
+    background-color: #fafafa;
+}
 
-    margin-right: 2rem;
+.tasks_goBack__button--light{
+    color: #fafafa;
+    background-color: #202020;
+}
 
-    color: #FAFAFA;
-    font-family: Roboto;
+.tasks_goBack__button:hover{
+    cursor: pointer;
+}
+
+// Timer
+.tasks_timer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    font: bold 5rem Roboto;
+}
+
+.tasks_timer--dark{
+    color: #fafafa;
+}
+.tasks_timer--light{
+    color: #303030;
+}
+
+.tasks_timer__label{
+    font-size: 2.5rem;
+}
+
+.tasks_timer__next{
     font-size: 3rem;
-    text-align: justify;
-
+    color: #1DB954;
 }
 
-.tasks__item__buttons{
-    display: flex;
-    flex-direction: row;
-}
+// Main
 
-.tasks__item__buttons div svg{
-    height: 3rem;
-    width: 3rem;
-    margin-left: 1rem;
+.tasks_main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }

@@ -43,7 +43,7 @@
 /*Spotify Module*/
 
 .spotify__title{
-    margin: 2rem 0;
+    margin: 20px 0;
     
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
 
 /* Youtube */
 .youtube__title{
-    margin: 2rem 0;
+    margin: 20px 0;
 
     display: flex;
     flex-direction: column;
@@ -107,24 +107,24 @@
 }
 
 .youtube__genres div{
-    border: #FAFAFA 0.5rem solid;
+    border: #FAFAFA 5px solid;
     border-radius: 10px;
 
-    margin: 1rem;
-    padding: 1rem;
+    margin: 10px;
+    padding: 10px;
 }
 
 .youtube__genres--dark div{
-    border: #fafafa 1rem solid;
+    border: #fafafa 10px solid;
 }
 
 .youtube__genres--light div{
-    border: #303030 1rem solid;
+    border: #303030 10px solid;
 }
 
 .youtube__genre:hover{
     cursor: pointer;
-    border: #1DB954 1rem solid;
+    border: #1DB954 10px solid;
     color: #1DB954;
 }
 
@@ -184,11 +184,11 @@
     }
     .spotify{
         grid-area: 2 / 1 / 12 / 2;
-        padding: 1rem;
+        padding: 10px;
     }
     .youtube{
         grid-area: 2 / 2 / 12 / 3;
-        padding: 1rem;
+        padding: 10px;
     }
     .skip{
         grid-area: 12 / 2 / 13 / 3;
@@ -209,7 +209,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
+        padding: 10px;
     }
     .spotify{
         grid-area: 2 / 1 / 6 / 3;

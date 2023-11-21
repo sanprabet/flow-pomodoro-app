@@ -8,12 +8,12 @@ function Music({theme}){
             <div className="spotify">
                 <ConnectSpotify theme={theme}/>
                 <div className={"spotify__title spotify__title--" + theme}>
-                    <p><span className='spotify__title--green'>Sign in</span> to listen to <span className='spotify__title--green'>your music</span></p>
+                    <p>Sign in to listen to <span className='spotify__title--green'>your music</span></p>
                 </div>
             </div>
             <div className="youtube">
                 <div className={"youtube__title youtube__title--" + theme}>
-                    <p>Or try our <span className='youtube__title--green'>instrumental flow</span> mixes</p>
+                    <p>Or try our <span className='youtube__title--green'>lofi mixes</span></p>
                 </div>
                 <div className={"youtube__genres youtube__genres--" + theme}>
                     <div className='youtube__genre youtube__whiteNose'>White Noise</div>
